@@ -1,0 +1,25 @@
+@mixin respond ($breakpoint) {
+    @if $breakpoint == pc {
+        @media (min-width: 1281px) { @content }
+    }
+    @if $breakpoint == hd-laptop {
+        @media (max-width: 1279px) and (min-width: 913px) { @content }
+    }
+    @if $breakpoint == laptop {
+        @media (max-width: 1024px) { @content }
+    }
+    @if $breakpoint == surface-pro {
+        @media (max-width: 912px) { @content }
+    }
+    @if $breakpoint == tablet {
+        @media (max-width: 768px) and (min-width: 579px) { @content }
+    }
+
+    @if $breakpoint == mobile {
+        @media (max-width: 578px) { @content }
+    }
+
+    @if $breakpoint == mobile_sg {
+        @media (max-width: 369px) { @content }
+    }
+}

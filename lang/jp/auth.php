@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'placeholder_email' => 'メールアドレスを入力する',
+    'placeholder_password' => 'パスワードを入力する',
+    'email' => 'メールアドレス',
+    'password' => 'パスワード',
+    'forgot' => 'パスワードを忘れた',
+    'register' => '新しくアカウントを作成する',
+    'login' => 'ログイン',
+    'logout' => 'ログアウト',
+    'login_success' => '正常にログインしました。',
+    'logout_success' => 'ログアウト成功。',
+    'W001_E001_email_required' => 'メールアドレスが入力されていません。',
+    'W001_E002_email_max' => 'メールアドレスは半角英数字の64文字以内で入力してください。',
+    'W001_E003_email' => 'メールアドレスが正しい形式ではありません。',
+    'W001_E004_email_not_exists' => 'このメールアドレスは登録されていません。',
+    'W001_I001_email_ban' => 'このアカウントはロックされています。oktmyb@gmail.comまでお問い合わせください。',
+    'W001_E005_password_required' => 'パスワードが入力されていません。',
+    'W002_E001_wrong_password' => 'メールアドレスまたはパスワードが正しくありません。',
+    'W002_E001_password_max' => 'パスワードは16文字以内で設定してください。',
+    'W002_E001_password_min' => 'パスワードは8文字以上で設定してください。',
+    'W002_E001_password_fullsize' => 'パスワードは全て半角英数で入力してください。',
+    'ADMIN_email_required' => 'メールアドレスが入力されていません。',
+    'ADMIN_passwork_length' => 'パスワードは8文字以上16文字以下で入力してください。',
+    'user_not_verify' => 'メールアドレスが認証されていないため、メールボックスでご確認してください。',
+    'verify_success' => 'メールが確認されました。 ログインできるようになりました。',
+];

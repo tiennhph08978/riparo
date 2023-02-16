@@ -1,0 +1,66 @@
+.form-register {
+    position: relative;
+    margin: 40px 283px 100px 283px;
+    max-width: 1280px;
+    @include respond (laptop){
+        margin: 40px 100px 100px 100px;
+    }
+
+    @include respond (tablet) {
+        margin: 24px 15px 70px 15px;
+    }
+
+    @include respond (mobile) {
+        margin: 24px 15px 70px 15px;
+    }
+    .title-register {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0.01em;
+        color: $black;
+    }
+
+    .text-register {
+        margin-bottom: 24px;
+    }
+
+    form {
+        div {
+            .btn-register-submit {
+                background: $primary;
+                border-radius: 4px;
+                padding: 13px 165px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+                color: $white;
+                @include respond (labtop) {
+                    width: 100%;
+                    padding: 13px 0;
+                    height: 48px;
+                }
+                @include respond (mobile) {
+                    width: 100%;
+                    padding: 13px 0;
+                    height: 48px;
+                }
+            }
+        }
+        .register-link-login {
+            margin-top: 24px;
+            a {
+                margin-top: 24px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 22px;
+                text-decoration: none;
+                color: $primary;
+            }
+        }
+    }
+}

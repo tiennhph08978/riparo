@@ -1,0 +1,239 @@
+.landing-content {
+    margin: 73px 100px 0 62px;
+    width: 530px;
+}
+
+.bottom-wrapper {
+    width: 100%;
+    position: relative;
+    margin-top: 116px;
+}
+
+.landing-content-bottom {
+    margin: 0 0 140px 100px;
+    width: 530px;
+}
+
+.landing-bg {
+    width: 588px;
+    height: 579px;
+}
+
+.landing-bg-2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    float: right;
+    width: 594px;
+    height: 622px;
+    z-index: 1;
+    margin-left: 57px;
+}
+
+.landing-content > .main-title, .landing-content-bottom > .main-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 12px;
+}
+
+.landing-content > .title, .landing-content-bottom > .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 2px;
+}
+
+.landing-content > .content-wrapper, .landing-content-bottom > .content-wrapper {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 14px 0;
+    text-align: justify;
+}
+
+.landing-content > .content-wrapper > .content, .landing-content-bottom > .content-wrapper > .content {
+    margin-bottom: 0;
+}
+
+.dot-content {
+    min-width: 130px;
+}
+
+.quick-content {
+    display: flex;
+}
+
+.dot-img {
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    margin-bottom: 4px;
+}
+
+.arrow-img {
+    width: 17px;
+    height: 17px;
+    margin: 0 4px 4px 8px;
+}
+
+.arrow-img-2 {
+    width: 20px;
+    height: 12px;
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+
+.landing-btn {
+    background: $primary;
+    border-radius: 4px;
+    padding: 12px 24px;
+    color: $white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 44px;
+    text-decoration: none;
+}
+
+.button-landing {
+  margin-top:  20px;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  .landing-btn {
+    padding: 0 24px;
+    margin-bottom: 10px;
+  }
+}
+
+.landing-btn:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    color: $white;
+}
+
+@include respond(pc) {
+    .landing-bg {
+        width: 80%;
+        height: auto;
+    }
+
+    .landing-bg-2 {
+        width: 80%;
+        height: auto;
+    }
+
+    .landing-content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .landing-content-bottom {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@include respond(hd-laptop) {
+    .landing-bg {
+        width: 90%;
+        height: auto;
+    }
+
+    .landing-bg-2 {
+        width: 90%;
+        height: auto;
+    }
+
+    .landing-content {
+        width: auto;
+        margin-left: 0;
+        margin-right: 50px;
+    }
+
+    .landing-content-bottom {
+        width: auto;
+        margin-left: 50px;
+        margin-right: auto;
+    }
+}
+
+@include respond(surface-pro) {
+    .landing-bg-2 {
+        position: initial;
+    }
+
+    .landing-content {
+        width: 630px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .landing-content-bottom {
+        width: 630px;
+        margin-bottom: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@include respond(tablet) {
+    .landing-bg {
+        width: 425px;
+        height: auto;
+    }
+
+    .landing-bg-2 {
+        width: 425px;
+        height: auto;
+        position: initial;
+    }
+
+    .landing-content {
+        width: 540px;
+        margin-top: 0;
+    }
+
+    .landing-content-bottom {
+        width: 540px;
+        margin-bottom: 70px;
+    }
+}
+
+@include respond(mobile) {
+    .bottom-wrapper {
+        margin-top: 24px;
+    }
+
+    .landing-bg {
+        width: 345px;
+        height: 339px;
+    }
+
+    .landing-bg-2 {
+        float: right;
+        position: initial;
+        margin-top: 56px;
+        width: 360px;
+        height: 377px;
+    }
+
+    .landing-content {
+        margin: 0 auto;
+        width: 343px;
+    }
+
+    .landing-content-bottom {
+        margin: 0 auto;
+        width: 343px;
+    }
+
+    .shorter-content {
+        max-width: 181px;
+    }
+
+    .longer-content {
+        max-width: 183px;
+    }
+}

@@ -1,0 +1,443 @@
+.login {
+    display: flex;
+    width: 100%;
+    height: auto;
+    .change-pass-img{
+        img {
+            width: 650px;
+            height: 617px;
+            @include respond(mobile) {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .forgot-password-img {
+        height: 100%;
+    }
+
+    .forgot-password-link{
+        padding: 0;
+        .login-form {
+            @include respond(mobile) {
+                margin: 57px 0 225px 0;
+            }
+        }
+    }
+}
+
+.login-bg {
+    width: 650px;
+    height: 617px;
+}
+
+
+.login-form-wrapper {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 630px;
+    @include respond(mobile) {
+        padding: 10px;
+    }
+}
+
+.login-form {
+    width: 630px;
+    margin: 126px 162px 92px 82px;
+
+    &-title {
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: $black;
+        @include respond (tablet) {
+            margin-top: 16px;
+        }
+        @include respond (mobile) {
+            margin-top: 16px;
+        }
+    }
+
+    .logo {
+        width: 268px;
+        height: 60px;
+        @include respond(mobile) {
+            width: 144px;
+            height: 32px;
+        }
+    }
+
+    .login-title {
+        color: $black;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        margin: 16px 0 24px 0;
+    }
+
+    .form-input {
+        position: relative;
+        margin-bottom: 32px;
+    }
+
+    .login-label {
+        color: $black;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+        margin-bottom: 4px;
+    }
+
+    .login-input {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        width: 100%;
+        height: 40px !important;
+        margin-bottom: 0 !important;
+        background: $white;
+        border: 1px solid $border;
+        border-radius: 4px;
+        padding: 9px 16px !important;
+        box-shadow: none;
+    }
+
+    .login-input:hover, .login-input:focus {
+        border-color: $primary;
+    }
+
+    .login-invalid {
+        border-color: $danger;
+    }
+
+    .login-input::placeholder {
+        display: inline-block;
+        color: $end-color;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+
+    .login-input::placeholder {
+        display: inline-block;
+        color: $end-color;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+
+    .login-error {
+        position: absolute;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: $danger;
+        margin-top: 2px;
+        left: 0;
+    }
+
+    .show-btn {
+        width: 14px;
+        height: 10px;
+        right: 15px;
+        top: 41px;
+        position: absolute;
+        float: right;
+        z-index: 2;
+        cursor: pointer;
+        color: $brown;
+    }
+
+    .show-pass {
+        width: 14px;
+        right: 15px;
+        top: 45px;
+        position: absolute;
+        transform: translate(-4%, -50%);
+        float: right;
+        z-index: 2;
+        cursor: pointer;
+        color: $brown;
+    }
+
+    .hide-btn {
+        top: 40px;
+        width: 15px;
+        height: 12px;
+    }
+
+    .login-link {
+        color: $primary;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+
+    .login-link:hover {
+        color: $primary;
+        text-decoration: none;
+        opacity: 0.8;
+    }
+
+    .login-btn {
+        background: $primary !important;
+        border-radius: 4px;
+        padding: 13px 24px;
+        gap: 10px;
+        margin: 22px 0;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+        color: $white;
+    }
+
+    .login-btn:hover {
+        opacity: 0.8;
+        color: $white;
+    }
+
+    .img-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .footer-text {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: $black-secondary;
+    }
+}
+
+.forgot-password {
+    .login-form {
+        width: 630px;
+        margin: 130px 157px 120px 75px;
+    }
+}
+
+.forgot-password-link {
+    .login-form {
+        width: 630px;
+        margin: 226px 157px 216px 82px;
+    }
+}
+.change-password {
+    .login-form {
+        @include respond(mobile) {
+            width: 100%!important;
+            .forgot-password-desc {
+                width: 100%;
+            }
+        }
+    }
+}
+@include respond(mobile) {
+    .login {
+        display: initial;
+    }
+
+    .logo {
+        width: 144px;
+        height: 32px;
+    }
+
+    .login-bg {
+        width: 85%;
+        height: 100%;
+    }
+
+    .login-bg-2 {
+        display: none;
+    }
+
+    .login-form-wrapper {
+        display: flex;
+        width: 100%;
+
+        .login-form {
+            width: 343px;
+            margin: 8px 20px 46px 20px;
+        }
+
+        .login-title {
+            font-size: 20px;
+        }
+
+        .login-btn {
+            margin: 20px 0;
+        }
+
+        .login-link {
+            margin: 0;
+        }
+
+        .login-title {
+            margin: 16px 0 20px 0;
+        }
+    }
+}
+
+.forgot-password-desc {
+    color: $grey;
+    margin: 24px 0;
+    @include respond (tablet) {
+        margin: 20px 0;
+    }
+    @include respond (mobile) {
+        margin: 20px auto 24px auto;
+        width: 343px;
+    }
+    span {
+        color: $black;
+        font-weight: 700;
+    }
+}
+
+.forgot-password-link-desc {
+    color: $grey;
+    margin: 24px 0;
+    @include respond (tablet) {
+        margin: 20px 0;
+    }
+    span {
+        color: $black;
+        font-weight: 700;
+    }
+}
+
+.forgot-password-link-desc_pc {
+    color: $grey;
+    margin: 24px 0;
+    @include respond (hd-laptop) {
+        display: none;
+    }
+    @include respond (laptop) {
+        display: none;
+    }
+    @include respond (tablet) {
+        display: none;
+    }
+    span {
+        color: $black;
+        font-weight: 700;
+    }
+}
+
+.forgot-password-link-desc_tablet {
+    color: $grey;
+    margin: 24px 0;
+    display: none;
+    @include respond(hd-laptop){
+        display: block;
+    }
+    @include respond (labtop) {
+        display: block;
+    }
+    @include respond (surface-pro) {
+        margin: 20px 0;
+        display: block;
+    }
+    @include respond (tablet) {
+        margin: 20px 0;
+        display: none;
+    }
+    @include respond (mobile) {
+        margin: 20px 0;
+        display: none;
+    }
+    @include respond (mobile_sg) {
+        margin: 20px 0;
+        display: block;
+    }
+}
+
+.forgot-password-link-desc__mobile{
+    color: $grey;
+    margin: 24px 0;
+    display: none;
+    @include respond(hd-laptop){
+        display: none;
+    }
+    @include respond (labtop) {
+        display: none;
+    }
+    @include respond (tablet) {
+        margin: 20px 0;
+        display: block;
+    }
+    @include respond (mobile) {
+        margin: 20px 0;
+        display: block;
+    }
+    @include respond (mobile_sg) {
+        margin: 20px 0;
+        display: none;
+    }
+}
+@include respond(tablet) {
+    .login {
+        display: initial;
+
+        .login-bg-2 {
+            display: none;
+        }
+
+        .login-form {
+            width: 386px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .login-form-wrapper {
+            width: initial;
+        }
+
+        .login-bg {
+            width: 90%;
+            height: 90%;
+        }
+    }
+}
+
+@include respond(surface-pro) {
+    .login {
+        display: initial;
+
+        .login-bg-2 {
+            display: none;
+        }
+
+        .login-form {
+            width: 386px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@include respond(hd-laptop) {
+    .login {
+        margin-bottom: 71px;
+        .forgot-password-img {
+            width: 60%;
+            .login-bg {
+                width: 95%;
+                height: auto;
+            }
+        }
+        .login-form-wrapper {
+            width: 40%;
+
+            .login-form {
+                margin: 100px 40px 0 40px;
+            }
+        }
+    }
+}

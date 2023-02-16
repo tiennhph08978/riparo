@@ -1,0 +1,55 @@
+@import "variables";
+
+#toast-container {
+    .toast-success {
+        background-color: #D6F2E8;
+        background-image: url('../../assets/img/toastr_success.png') !important;
+        background-size: 27px;
+        border: 1px solid #13B67B;
+    }
+
+    .toast-info {
+        background-color: #EEF2FF;
+        background-image: url('../../assets/img/toastr_message.png') !important;
+        background-size: 27px;
+        border: 1px solid #3764F1;
+    }
+
+    .toast-warning {
+        background-color: #FFF8EB;
+        background-image: url('../../assets/img/toastr_warning.png') !important;
+        background-size: 27px;
+        border: 1px solid #F4B840;
+    }
+
+    .toast-error {
+        background-color: #FFF2F2;
+        background-image: url('../../assets/img/toastr_error.png') !important;
+        background-size: 27px;
+        border: 1px solid #FF3030;
+    }
+
+    .toast {
+        min-width: 390px;
+        min-height: 65px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        opacity: 1 !important;
+
+        .toast-message {
+            color: $black;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    #toast-container {
+        .toast {
+            min-width: 300px;
+            font-size: 12px;
+        }
+    }
+}

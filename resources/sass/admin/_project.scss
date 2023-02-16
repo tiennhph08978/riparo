@@ -1,0 +1,838 @@
+.nav-tabs-style {
+    text-decoration: none;
+}
+
+.nav-tabs-style:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    border: 0;
+}
+
+.project-show {
+    .nav-tabs {
+        .nav-item {
+            .active {
+                background: $primary !important;
+                color: $white !important;
+            }
+
+            .nav-link {
+                font-size: 16px;
+                font-weight: 500;
+                color: $black-secondary;
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+        }
+    }
+}
+
+.container-fluid {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border: 1px solid rgba(11,11,11,.125);
+
+    .id {
+        width: 30px;
+    }
+
+    .search-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .search-input-wrapper {
+        width: 343px;
+
+        .search-input {
+            font-size: 13px;
+            font-weight: 0;
+            height: 34px;
+            height: 48px;
+            border: 1px solid $border;
+            border-radius: 4px;
+            padding: 6px;
+            width: 100%;
+        }
+
+        .search-input::placeholder {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 22px;
+            color: $border;
+        }
+    }
+
+    .input-search:focus {
+        outline: none;
+        border-color: $primary;
+        box-shadow: none;
+    }
+
+    .search-icon {
+        position: absolute;
+        top: 14px;
+        left: 18px;
+    }
+
+    .select-input {
+        font-size: 14px;
+        font-weight: 500;
+        height: 36px;
+        border: 1px solid $border;
+        border-radius: 4px;
+        padding: 6px;
+
+        option:hover {
+                cursor: pointer;
+        }
+    }
+
+    .select-input:hover {
+        cursor: pointer;
+    }
+
+    .select-input:focus {
+        outline: none;
+        border-color: $primary;
+    }
+
+    .card {
+        border: initial;
+        box-shadow: initial;
+    }
+
+    .project-total {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 12px;
+    }
+
+    .date-input {
+        position: relative;
+        font-size: 16px;
+        font-weight: 700;
+        outline: none;
+        border: 1px solid $border;
+        border-radius: 4px;
+        padding: 2px 20px;
+    }
+
+    .date-input:focus {
+        border-color: $primary;
+    }
+
+    .date-input[type="date"]::-webkit-calendar-picker-indicator {
+        position: absolute;
+        z-index: 2;
+        cursor: pointer;
+        display: block;
+        width: 25px;
+        height: 25px;
+        padding: 6px 20px 6px 122px;
+        border-width: thin;
+        right: 0;
+    }
+
+    .project-date {
+        padding: 12px 18px;
+        color: $white;
+        background: $primary;
+        margin-right: 16px;
+        font-weight: 700;
+        border-radius: 5px;
+    }
+
+    .end-date {
+        margin-left: 20px;
+        font-size: 24px;
+    }
+
+    .action-wrapper {
+        width: 80px;
+
+        .action-icon {
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    .table-project-info {
+        th {
+            font-size: 16px;
+            font-weight: 700;
+            color: $white;
+            background: $primary;
+            padding: 15px 10px 15px 0;
+        }
+
+        td {
+            font-size: 14px;
+            font-weight: 500;
+            padding: 15px 0;
+        }
+
+        .text-title {
+            font-weight: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    table {
+        th {
+            background: $table-th;
+            font-size: 14px;
+            padding: 6px;
+        }
+    }
+
+    .table-list {
+        tr {
+            .title {
+                min-width: 500px;
+            }
+
+            .status {
+                min-width: 155px;
+            }
+        }
+
+        th {
+            font-size: 16px;
+            font-weight: 700;
+            background: $primary;
+            color: $white;
+        }
+
+        td {
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+
+    .table-user {
+        .user-name {
+            display: flex;
+            align-items: center;
+            min-width: 120px;
+        }
+
+        .user-address {
+            min-width: 240px;
+        }
+
+        td {
+            padding: 6px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .text-title {
+            font-weight: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .empty-table {
+        padding: 30px;
+        border: 1px solid $border;
+        border-top: 0;
+    }
+
+    .contract-gallery {
+        display: flex;
+        width: 100%;
+    }
+
+    .empty {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .empty-img {
+            display: flex;
+        }
+    }
+
+    @include respond(mobile) {
+        .search-wrapper {
+            display: initial;
+        }
+
+        .search-input {
+            margin-bottom: 8px;
+            width: 100%;
+        }
+
+        .select-input {
+            width: 100%;
+        }
+
+        .action-wrapper {
+            width: initial;
+
+            .action-icon {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        .table-project-info {
+            .text-title {
+                max-width: 130px;
+            }
+        }
+
+        .detail-table {
+            .longest {
+                margin-bottom: 0! important;
+            }
+
+            .user-name {
+                display: inline-grid;
+                align-items: center;
+                justify-content: center;
+            }
+
+            tr {
+                margin-bottom: 32px;
+                th {
+                    padding: 0;
+                    margin-bottom: 12px;
+                }
+
+                td {
+                    padding: 0;
+
+                    .project-icon {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-right: 8px;
+        object-fit: cover;
+    }
+
+    .project-status {
+        padding: 12px 18px;
+        color: $white;
+        background: $primary;
+        margin-right: 16px;
+        font-weight: 700;
+        border-radius: 5px;
+    }
+
+    .contract-link {
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .upload-pdf {
+        cursor: pointer;
+        margin-right: 16px;
+    }
+
+    .upload-pdf-text {
+        pointer-events: none;
+        color: $text-muted;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .project-tool {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 24px;
+    }
+
+    .checked-icon {
+        font-size: 24px;
+        color: $primary;
+    }
+}
+
+.waiting-color {
+    color: $warning;
+}
+
+.recruitment-color {
+    color: $primary;
+}
+
+.interview-color {
+    color: $light-violet;
+}
+
+.active-color {
+    color: $light-green;
+}
+
+.reject-color {
+    color: $danger;
+}
+
+.done-color {
+    color: $color_grey;
+}
+
+.detail, .detail:hover {
+    color: $primary;
+    margin-right: 8px;
+
+    i {
+        font-size: 24px;
+    }
+}
+
+.delete, .delete:hover {
+    color: $danger;
+
+    i {
+        font-size: 24px;
+    }
+}
+
+.delete:hover, .detail:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.detail-table {
+    th {
+        color: $black !important;
+        background: $white !important;
+        border: 1px solid transparent;
+        font-size: 14px !important;
+        width: 183px;
+    }
+
+    td {
+        border: 1px solid transparent;
+        text-align: justify;
+    }
+
+    .icon {
+        display: flex;
+
+        .row-info {
+            display: flex;
+            margin-bottom: 12px;
+        }
+
+        .project-info-line {
+            display: flex;
+
+            .project-info-title {
+                font-weight: 700;
+            }
+        }
+
+        .project-icon {
+            width: 36px;
+            height: 36px;
+            margin-right: 6px;
+        }
+
+        .short {
+            min-width: 25%;
+            max-width: 25%;
+        }
+
+        .long {
+            min-width: 215px;
+            max-width: 215px;
+            margin-right: 12px;
+        }
+
+        .longest {
+            width: 100%;
+            margin-right: 12px;
+        }
+
+        .location {
+            width: 50%;
+        }
+    }
+
+    @include respond(tablet) {
+        .row-info {
+            display: initial !important;
+        }
+
+        .long {
+            width: initial;
+            max-width: initial;
+        }
+    }
+}
+
+.card {
+    .import-image {
+        margin: 0 0 32px;
+        padding: 0;
+
+        .text-danger {
+            margin-top: 3px;
+        }
+    }
+
+    .input-image {
+        display: flex;
+        border-radius: 8px;
+        color: $white-50;
+        justify-content: center;
+        padding: 0;
+        overflow: hidden;
+
+        label {
+            display: flex;
+        }
+
+        .show-image {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .show-default-image {
+            display: block;
+        }
+    }
+
+    .list-image-detail {
+        margin-left: 1px;
+
+        .input-image {
+            height: 170px;
+            margin-top: 15px;
+
+            img {
+                margin: auto;
+            }
+        }
+
+        .input-image:first-child {
+            margin-top: 0;
+        }
+    }
+
+    @media only screen and (min-width: 1281px) {
+        .list-image-detail {
+            .input-image {
+                height: 200px;
+
+                img {
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .import-image {
+            display: block;
+        }
+        .image-banner {
+            height: 343px;
+        }
+        .form-image-detail {
+            padding: 0;
+        }
+        .list-image-detail {
+            justify-content: space-between;
+            margin-right: 0;
+            margin-left: 0;
+
+            .input-image {
+                height: 130px;
+                max-width: 160px;
+                margin-top: 20px;
+
+                img {
+                    margin: auto;
+                }
+            }
+
+            .input-image:first-child {
+                margin-top: 15px;
+            }
+        }
+        .icon {
+            .project-info-line {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 575px) {
+        .image-banner {
+            height: 228px;
+        }
+        .list-image-detail {
+            .input-image {
+                height: 70px;
+                max-width: 105px;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+.project-title {
+    margin-bottom: 12px;
+
+    .title {
+        font-weight: 700;
+    }
+
+    .category {
+        font-weight: 700;
+    }
+
+    .type {
+        font-weight: 500 !important;
+        color: $grey;
+    }
+
+    .div-new {
+        display: inline-block;
+        vertical-align: top;
+        height: 24px;
+        margin-top: 2px;
+    }
+
+    .new {
+        display: inline-block;
+        vertical-align: top;
+        font-weight: 500;
+        font-size: 13px;
+        color: $white;
+        text-transform: uppercase;
+        line-height: 20px;
+        background: $danger;
+        border-radius: 4px;
+        padding: 2px 6px;
+    }
+}
+
+.back-icon {
+    color: $primary;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+.back-icon:hover {
+    cursor: pointer;
+}
+
+@include respond(pc) {
+    .project-detail-images {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@include respond(surface-pro) {
+    .contract-img {
+        margin-bottom: 16px;
+    }
+}
+
+@include respond(tablet) {
+    .card-body {
+        padding: 12px;
+    }
+
+    .icon {
+        display: initial !important;
+
+        .short {
+            min-width: initial;
+            max-width: initial;
+        }
+
+        .project-info-line {
+            margin-bottom: 16px;
+        }
+
+        .location {
+            margin-bottom: 16px;
+        }
+    }
+
+    .detail-table {
+        th {
+            padding-right: 0;
+            width: 100px;
+        }
+    }
+
+    .project-detail-images {
+        width: 100%;
+        display: initial;
+        margin: 0;
+        .main-image {
+            width: 100%;
+        }
+        .sub-image-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 16px;
+            .sub-image {
+                width: 30%;
+                height: 100%;
+                margin-bottom: 16px !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .search-input-wrapper {
+        width: 100% !important;
+        margin-bottom: 16px;
+    }
+
+    .project-tool {
+        margin: 18px 6px !important;
+    }
+
+    .nav-link {
+        font-size: 13px !important;
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    .project-title {
+        .title {
+            line-height: 22px;
+
+            .text-title {
+                font-size: 16px;
+            }
+        }
+
+        .category {
+            font-size: 13px;
+        }
+    }
+
+    .detail-table {
+        display: block;
+        width: 100%;
+        border: 0;
+    }
+
+    .card-body {
+        padding: 6px;
+    }
+
+    .project-detail-images {
+        width: 100%;
+        display: initial;
+        margin: 0;
+        .main-image {
+            width: 100%;
+        }
+        .sub-image-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 16px;
+            .sub-image {
+                width: 30%;
+                height: 100%;
+                margin-bottom: 16px !important;
+            }
+        }
+    }
+
+    .icon {
+        .row-info {
+            display: initial !important;
+
+            .short {
+                min-width: initial;
+                max-width: initial;
+            }
+        }
+
+        .project-info-line {
+            margin-bottom: 16px;
+        }
+
+        .location {
+            margin-bottom: 16px;
+        }
+    }
+
+    .detail-table {
+        tr {
+            display: grid;
+            margin-bottom: 16px;
+        }
+
+        th {
+            padding: 0 0 6px 0;
+            width: 100%;
+        }
+
+        td {
+            padding: 0;
+            text-align: justify;
+            word-break: break-word;
+        };
+    }
+
+    .end-date {
+        margin-left: 6px !important;
+        font-size: 18px !important;
+    }
+
+    .project-total {
+        font-size: 14px !important;
+        margin-bottom: 0 !important;
+    }
+}
+.input-date {
+    background-image: url("../../assets/icon/icon_calendar.svg");
+    background-position: calc(100% - 12px) center;
+    background-repeat: no-repeat;
+    background-color: $white;
+    width: 150px;
+    cursor: pointer;
+}
+.hasDatepicker {
+    background-image: url("../../assets/icon/icon_calendar.svg");
+    background-position: calc(100% - 12px) center;
+    background-repeat: no-repeat;
+    background-color: $white;
+    width: 150px;
+    cursor: pointer;
+}
+.input-date:read-only {
+    background-color: $white;
+}
+.hasDatepicker:read-only {
+    background-color: $white;
+}

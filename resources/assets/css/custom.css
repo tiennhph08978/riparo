@@ -1,0 +1,356 @@
+:root {
+    --black: #0B0B0B;
+    --primary: #13B67B;
+    --color-eye: #D9D9D9;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0 !important;
+}
+
+.footer {
+    left: 0;
+    right: 0;
+    text-align-last: center;
+    width: 100%;
+    border-top: 1px solid #EAE8E8;
+    padding: 5px 0;
+    position: absolute;
+}
+
+.navi {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 100px;
+    height: 66px;
+    color: #13B67B;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    align-items: center;
+}
+
+.navi .d-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 40px;
+}
+
+.logout {
+    background: #13B67B;
+    color: white;
+    width: 104px;
+    height: 40px;
+}
+
+body > .container {
+    margin: 40px 100px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: 300px;
+}
+
+@media (max-width: 425px) {
+    .navi {
+        padding: 5px 10px;
+    }
+    body > .container {
+        margin: 10px 5px;
+    }
+
+    .navi .d-flex {
+        width: 140px;
+        font-size: 13px;
+    }
+}
+
+.container > .form-register {
+    margin: 40px 198px;
+}
+
+.end-color {
+    color: #D7D7D7;
+}
+
+.icon-dot {
+    margin-right: 4px;
+    font-size: 25px;
+}
+
+.approved-color {
+    color: #13B67B;
+}
+
+.start-color {
+    color: #3764F1;
+}
+
+.warning-color {
+    color: #F4B840;
+}
+
+.form-group > label {
+     font-style: normal;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 22px;
+     margin-bottom: 4px;
+     color: var(--black);
+ }
+
+.form-group > label > .required {
+    padding: 0px 3px;
+    width: 26px;
+    margin-left: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    height: 18px;
+    background: #FF3030;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.div-padding-left > .btn-register {
+    background: #13B67B;
+    height: 40px;
+    border-radius: 4px;
+    padding: -1px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.form-register > form > div > div > div > .text-code {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: #0B0B0B;
+}
+
+.form-group {
+    margin-bottom: 32px;
+}
+
+.div-padding-left {
+    padding-left: 10px!important;
+}
+
+.div-padding-right {
+    padding-right: 10px!important;
+}
+
+.div-padding-left-address{
+    padding-left: 0px;
+}
+
+.input-register::placeholder {
+    color: #D7D7D7 !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 14px;
+    align-items: center;
+    line-height: 22px;
+}
+
+.form-group > div > div > .show-pass {
+    right: 30px;
+    top: 11px;
+    position: absolute;
+    float: right;
+    z-index: 2;
+    cursor: pointer;
+    color: var(--color-eye);
+}
+
+.text-danger {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FF3030;
+}
+
+.desc-forgot-password {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #595E6F;
+}
+
+.myAlert-top{
+    position: fixed;
+    top: 5px;
+    width: 35%;
+    left: 65%;
+}
+
+.alert{
+    display: block;
+}
+.form-input-forgot-password {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+    .myAlert-top{
+        position: fixed;
+        top: 5px;
+        width: 100%;
+        left: 0%;
+    }
+
+    .container > .form-register {
+        margin: 0px;
+    }
+    .div-padding-left > .btn-register {
+        background: #13B67B;
+        border-radius: 4px;
+        width: 100%;
+        padding: 7px 0px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .container > .form-register > form > div > .btn-register-submit {
+        margin-top: 32px;
+        background: #13B67B;
+        border-radius: 4px;
+        padding: 10px 90px;
+        width: 100%;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+
+
+    .container > .form-register > .title-register{
+        margin-top: 24px;
+    }
+}
+
+body > .row {
+    margin: 0;
+}
+
+/* Paginate */
+.pagination > .disabled {
+    display: none;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.pagination-btn {
+    background: #13B67B;
+    border-radius: 6px;
+}
+
+.pagination li {
+    width: 32px;
+    height: 32px;
+    color: #13B67B;
+    border: 1px solid #D6F2E8;
+    border-radius: 8px;
+    margin-right: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.pagination li a {
+    color: #13B67B;
+    text-decoration: none;
+    padding: 9px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination li.active {
+    background: #D6F2E8;
+}
+
+.pagination li:hover:not(.active) {
+    background: #D6F2E8;
+}
+/* End paginate */
+
+@media only screen and (min-width: 1920px) {
+    .custom-container {
+        margin: 0 25%;
+    }
+
+    .wrapper {
+        margin: 0 320px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .div-padding-left > .btn-register {
+        background: #13B67B;
+        border-radius: 4px;
+        width: 100%;
+        padding: 7px 0;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .btn-register-submit {
+        margin-top: 32px;
+        background: #13B67B;
+        border-radius: 4px;
+        padding: 10px 90px;
+        width: 100%;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+
+    body > .row {
+        margin: 0;
+    }
+}
+
+.form-control {
+    height: 40px;
+}

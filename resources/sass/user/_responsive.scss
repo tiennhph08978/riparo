@@ -1,0 +1,52 @@
+@import "variables";
+
+@media screen and (max-width: 1100px) {
+  #landing-page .button a {
+    margin-left: 8px;
+  }
+  .main .information-detail-content__img .avatar-form #filePreview {
+    width: 150px;
+    height: 150px;
+  }
+  .button .user-header-button {
+    margin-left: 8px;
+  }
+  .navi {
+    padding: 13px 64px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #landing-page .button a {
+    margin-left: 0;
+  }
+  .main .information-detail-content__img .avatar-form #filePreview {
+    width: 150px;
+    height: 150px;
+  }
+  .button .user-header-button {
+    margin-left: 0;
+  }
+  .navi {
+    padding: 13px 64px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        .edit-password {
+            padding: 0;
+        }
+    }
+
+    .fa-eye-custom {
+        font-size: 12px;
+    }
+
+    .footer {
+        .container {
+            padding: 6px 61.5px;
+            margin: unset;
+            font-size: 13px;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+image: hoanghoi/laravel:latest
+
+services:
+  - mysql:latest
+
+variables:
+  MYSQL_DATABASE: laravel
+  MYSQL_ROOT_PASSWORD: secret
+  DB_HOST: mysql
+  DB_USERNAME: root
+
+cache:
+  paths:
+    - vendor/
+    - node_modules/
+
+stages:
+  - test
+  - deploy
+
+phpcs:
+  stage: test
+  script:
+    - cp .env.test .env
+    - composer install
+    - php artisan key:generate
+    - php artisan migrate
+    - php ./vendor/bin/phpcs
+  only:
+    - master
+    - merge_requests
+
+migrate:
+  stage: test
+  script:
+    - cp .env.test .env
+    - composer install
+    - php artisan key:generate
+    - php artisan migrate
+    - php artisan migrate:rollback
+  only:
+    - master
+
+build:
+  stage: test
+  image: node:16-alpine
+  script:
+    - cp .env.example .env
+    - yarn install
+    - yarn build
+  only:
+    - master
+
+deploy-stg:
+  stage: deploy
+  before_script:
+    - eval "$(ssh-agent -s)"
+    - echo "$SSH_STG_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - ssh-add -l
+    - mkdir -p ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+  script:
+    - composer install
+    - ./vendor/bin/envoy run deploy --env=stg
+  only:
+    - develop
